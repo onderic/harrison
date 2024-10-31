@@ -1,0 +1,52 @@
+Time: Thu Oct 31 11:00:18 2024
+IP: 192.168.0.106
+Port: 2000
+Command Executed: 
+Command Result: 
+Location Data: Private IP Address: Unable to determine location. Public IP: 41.89.162.2
+Raw Data: 
+Username: admin
+Password: 12345
+======================================
+
+==================================================
+
+Time: Thu Oct 31 11:02:45 2024
+IP: 41.89.162.2
+Port: 2001
+Command Executed: 
+Command Result: 
+Location Data: Thika, Nairobi County, Kenya - ISP: KENET
+Raw Data: 
+Username: admin
+Password: 12345
+======================================
+
+==================================================
+
+Time: Thu Oct 31 11:05:18 2024
+IP: 41.89.162.2
+Port: 2000
+Command Executed: 
+Command Result: 
+Location Data: {'status': 'success', 'country': 'Kenya', 'countryCode': 'KE', 'region': '30', 'regionName': 'Nairobi County', 'city': 'Thika', 'zip': '', 'lat': -1.0258, 'lon': 37.0706, 'timezone': 'Africa/Nairobi', 'isp': 'KENET', 'org': 'Jomo Kenyatta Memorial Library, University of Nairobi', 'as': 'AS36914 Kenya Education Network', 'query': '41.89.162.2'}
+Raw Data: 
+Username: admin
+Password: 1234
+======================================
+
+==================================================
+
+Time: Thu Oct 31 11:05:25 2024
+IP: 41.89.162.2
+Port: 2000
+Command Executed: 
+Command Result: 
+Location Data: {'status': 'success', 'country': 'Kenya', 'countryCode': 'KE', 'region': '30', 'regionName': 'Nairobi County', 'city': 'Thika', 'zip': '', 'lat': -1.0258, 'lon': 37.0706, 'timezone': 'Africa/Nairobi', 'isp': 'KENET', 'org': 'Jomo Kenyatta Memorial Library, University of Nairobi', 'as': 'AS36914 Kenya Education Network', 'query': '41.89.162.2'}
+Raw Data: 
+Username: admin
+Password: 12345
+======================================
+
+==================================================
+
