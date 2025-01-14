@@ -3,6 +3,13 @@
 # Initial working directory for the user
 current_directory = "/home/kali"
 
+# Simulated file contents
+file_system = {
+    "/home/kali/README.md": "This is a README file.\n",
+    "/home/kali/requirements.txt": "django==3.2\n",
+    "/home/kali/myapp/models.py": "# Models for the app\n",
+}
+
 def whoami():
     return "kali"
 
@@ -19,49 +26,64 @@ def ls(path=""):
         "/home/kali/venv": ["bin", "lib", "include", "pyvenv.cfg"],
     }
     
-    # If path is not provided, use the current directory
     if not path:
         path = current_directory
 
-    # If path does not exist in the structure
     if path not in django_structure:
         return "ls: no such file or directory"
     
-    # Return contents of the directory if it exists
     return "  ".join(django_structure.get(path, []))
 
 def pwd():
     return current_directory
 
 def cat(filename=""):
-    # Simulate reading file contents
-    if filename:
-        return f"Contents of {filename}" 
-    else:
-        return "cat: missing file operand"
+    """Simulate reading file contents."""
+    filepath = f"{current_directory}/{filename}" if filename else ""
+    if filepath in file_system:
+        return file_system[filepath]
+    return f"cat: {filename}: No such file or directory"
 
 def mkdir(dirname=""):
     return f"Directory {dirname} created" if dirname else "mkdir: missing operand"
 
 def touch(filename=""):
-    return f"File {filename} created" if filename else "touch: missing operand"
+    filepath = f"{current_directory}/{filename}" if filename else ""
+    if filename:
+        file_system[filepath] = ""  # Create an empty file
+        return f"File {filename} created"
+    return "touch: missing operand"
 
 def cd(dirname):
     global current_directory
-    # Check if the directory exists
     if dirname == "..":
-        # Simulate moving to the parent directory
         if current_directory != "/home/kali":
-            current_directory = "/home/kali" 
+            current_directory = "/home/kali"
         return f"Changed directory to {current_directory}"
     
-    # Simulated directory change
     new_path = f"{current_directory}/{dirname}"
     if new_path in ["/home/kali/myapp", "/home/kali/venv"]:
         current_directory = new_path
         return f"Changed directory to {current_directory}"
     
     return f"cd: no such file or directory: {dirname}"
+
+def open_file(filename=""):
+    filepath = f"{current_directory}/{filename}" if filename else ""
+    if filename:
+        if filepath in file_system:
+            return f"File {filename} opened. Current contents:\n{file_system[filepath]}"
+        return f"open_file: {filename}: No such file or directory"
+    return "open_file: missing file operand"
+
+def write_file(filename="", content=""):
+    filepath = f"{current_directory}/{filename}" if filename else ""
+    if filename:
+        if filepath in file_system:
+            file_system[filepath] += content + "\n"
+            return f"Written to {filename}."
+        return f"write_file: {filename}: No such file or directory"
+    return "write_file: missing file operand"
 
 def simulate_command(command):
     """Map commands to functions."""
@@ -73,12 +95,13 @@ def simulate_command(command):
         "cat": cat,
         "mkdir": mkdir,
         "touch": touch,
-        "cd": cd,  
+        "cd": cd,
+        "open_file": open_file,
+        "write_file": write_file,
     }
     
-    parts = command.split()
+    parts = command.split(" ", 1)
     base_command = parts[0]
-    args = parts[1:] if len(parts) > 1 else []
+    args = parts[1].split(" ", 1) if len(parts) > 1 else []
     
     return commands.get(base_command, lambda *args: "Command not found")(*args)
-

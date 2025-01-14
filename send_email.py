@@ -19,7 +19,7 @@ def send_email():
         with open(LOG_FILE_PATH, "rb") as log_file:
             log_data = log_file.read()
 
-        subject = "Honeypot Logs"
+        subject = "Honeypot  Security Logs"
         body = "Attached are the latest logs from the honeypot."
         message = f"Subject: {subject}\n\n{body}".encode() + log_data
 
@@ -36,7 +36,7 @@ def send_email():
         print(f"[ERROR] Log file not found: {LOG_FILE_PATH}")
 
 
-# Schedule the email sending every 5 minutes
+# Schedule the email sending every 1 minutes
 schedule.every(1).minutes.do(send_email)
 
 if __name__ == "__main__":

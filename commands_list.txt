@@ -1,0 +1,17 @@
+
+File and Directory Commands:
+1. ls [path] - Lists the contents of a directory. If no path is provided, it lists the contents of the current directory.
+2. pwd - Displays the current working directory.
+3. cd [dirname] - Changes the current working directory. Use '..' to move to the parent directory.
+4. mkdir [dirname] - Simulates creating a new directory (no actual filesystem changes).
+5. touch [filename] - Creates an empty file in the current directory.
+6. cat [filename] - Reads and displays the contents of a file.
+7. open_file [filename] - Opens a file and displays its current contents.
+8. write_file [filename] [content] - Appends the provided content to an existing file.
+
+System Information Commands:
+9. whoami - Displays the name of the current user (kali).
+10. uname - Displays basic system information, such as the kernel name, version, and architecture.
+
+Utility:
+11. simulate_command [command] - Parses and maps user input to the corresponding function in the script, executing the appropriate logic.

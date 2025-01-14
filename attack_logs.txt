@@ -1,9 +1,9 @@
-Time: Thu Oct 31 11:00:18 2024
-IP: 192.168.0.106
+Time: Tue Jan 14 06:54:28 2025
+IP: 41.89.162.2
 Port: 2000
-Command Executed: 
-Command Result: 
-Location Data: Private IP Address: Unable to determine location. Public IP: 41.89.162.2
+Command Executed: ls
+Command Result: manage.py  myapp  venv  requirements.txt  README.md
+Location Data: {'status': 'success', 'country': 'Kenya', 'countryCode': 'KE', 'region': '30', 'regionName': 'Nairobi County', 'city': 'Nairobi', 'zip': '09831', 'lat': -1.2841, 'lon': 36.8155, 'timezone': 'Africa/Nairobi', 'isp': 'KENET', 'org': 'Jomo Kenyatta Memorial Library, University of Nairobi', 'as': 'AS36914 Kenya Education Network', 'query': '41.89.162.2'}
 Raw Data: 
 Username: admin
 Password: 12345
@@ -11,12 +11,12 @@ Password: 12345
 
 ==================================================
 
-Time: Thu Oct 31 11:02:45 2024
+Time: Tue Jan 14 06:54:51 2025
 IP: 41.89.162.2
-Port: 2001
-Command Executed: 
-Command Result: 
-Location Data: Thika, Nairobi County, Kenya - ISP: KENET
+Port: 2000
+Command Executed: taouch requirements.txt
+Command Result: Command not found
+Location Data: {'status': 'success', 'country': 'Kenya', 'countryCode': 'KE', 'region': '30', 'regionName': 'Nairobi County', 'city': 'Nairobi', 'zip': '09831', 'lat': -1.2841, 'lon': 36.8155, 'timezone': 'Africa/Nairobi', 'isp': 'KENET', 'org': 'Jomo Kenyatta Memorial Library, University of Nairobi', 'as': 'AS36914 Kenya Education Network', 'query': '41.89.162.2'}
 Raw Data: 
 Username: admin
 Password: 12345
@@ -24,25 +24,168 @@ Password: 12345
 
 ==================================================
 
-Time: Thu Oct 31 11:05:18 2024
+Time: Tue Jan 14 06:59:27 2025
 IP: 41.89.162.2
 Port: 2000
-Command Executed: 
-Command Result: 
-Location Data: {'status': 'success', 'country': 'Kenya', 'countryCode': 'KE', 'region': '30', 'regionName': 'Nairobi County', 'city': 'Thika', 'zip': '', 'lat': -1.0258, 'lon': 37.0706, 'timezone': 'Africa/Nairobi', 'isp': 'KENET', 'org': 'Jomo Kenyatta Memorial Library, University of Nairobi', 'as': 'AS36914 Kenya Education Network', 'query': '41.89.162.2'}
+Command Executed: open_file
+Command Result: Command not found
+Location Data: {'status': 'success', 'country': 'Kenya', 'countryCode': 'KE', 'region': '30', 'regionName': 'Nairobi County', 'city': 'Nairobi', 'zip': '09831', 'lat': -1.2841, 'lon': 36.8155, 'timezone': 'Africa/Nairobi', 'isp': 'KENET', 'org': 'Jomo Kenyatta Memorial Library, University of Nairobi', 'as': 'AS36914 Kenya Education Network', 'query': '41.89.162.2'}
 Raw Data: 
 Username: admin
-Password: 1234
+Password: 12345
 ======================================
 
 ==================================================
 
-Time: Thu Oct 31 11:05:25 2024
+Time: Tue Jan 14 06:59:31 2025
+IP: 41.89.162.2
+Port: 2000
+Command Executed: ls
+Command Result: manage.py  myapp  venv  requirements.txt  README.md
+Location Data: {'status': 'success', 'country': 'Kenya', 'countryCode': 'KE', 'region': '30', 'regionName': 'Nairobi County', 'city': 'Nairobi', 'zip': '09831', 'lat': -1.2841, 'lon': 36.8155, 'timezone': 'Africa/Nairobi', 'isp': 'KENET', 'org': 'Jomo Kenyatta Memorial Library, University of Nairobi', 'as': 'AS36914 Kenya Education Network', 'query': '41.89.162.2'}
+Raw Data: 
+Username: admin
+Password: 12345
+======================================
+
+==================================================
+
+Time: Tue Jan 14 06:59:33 2025
+IP: 41.89.162.2
+Port: 2000
+Command Executed: pwd
+Command Result: /home/kali
+Location Data: {'status': 'success', 'country': 'Kenya', 'countryCode': 'KE', 'region': '30', 'regionName': 'Nairobi County', 'city': 'Nairobi', 'zip': '09831', 'lat': -1.2841, 'lon': 36.8155, 'timezone': 'Africa/Nairobi', 'isp': 'KENET', 'org': 'Jomo Kenyatta Memorial Library, University of Nairobi', 'as': 'AS36914 Kenya Education Network', 'query': '41.89.162.2'}
+Raw Data: 
+Username: admin
+Password: 12345
+======================================
+
+==================================================
+
+Time: Tue Jan 14 06:59:54 2025
+IP: 41.89.162.2
+Port: 2000
+Command Executed: touch tt.txt
+Command Result: File tt.txt created
+Location Data: {'status': 'success', 'country': 'Kenya', 'countryCode': 'KE', 'region': '30', 'regionName': 'Nairobi County', 'city': 'Nairobi', 'zip': '09831', 'lat': -1.2841, 'lon': 36.8155, 'timezone': 'Africa/Nairobi', 'isp': 'KENET', 'org': 'Jomo Kenyatta Memorial Library, University of Nairobi', 'as': 'AS36914 Kenya Education Network', 'query': '41.89.162.2'}
+Raw Data: 
+Username: admin
+Password: 12345
+======================================
+
+==================================================
+
+Time: Tue Jan 14 07:00:16 2025
+IP: 41.89.162.2
+Port: 2000
+Command Executed: cat tt.txt
+Command Result: Contents of tt.txt
+Location Data: {'status': 'success', 'country': 'Kenya', 'countryCode': 'KE', 'region': '30', 'regionName': 'Nairobi County', 'city': 'Nairobi', 'zip': '09831', 'lat': -1.2841, 'lon': 36.8155, 'timezone': 'Africa/Nairobi', 'isp': 'KENET', 'org': 'Jomo Kenyatta Memorial Library, University of Nairobi', 'as': 'AS36914 Kenya Education Network', 'query': '41.89.162.2'}
+Raw Data: 
+Username: admin
+Password: 12345
+======================================
+
+==================================================
+
+Time: Tue Jan 14 07:00:44 2025
+IP: 41.89.162.2
+Port: 2000
+Command Executed: whoami
+Command Result: kali
+Location Data: {'status': 'success', 'country': 'Kenya', 'countryCode': 'KE', 'region': '30', 'regionName': 'Nairobi County', 'city': 'Nairobi', 'zip': '09831', 'lat': -1.2841, 'lon': 36.8155, 'timezone': 'Africa/Nairobi', 'isp': 'KENET', 'org': 'Jomo Kenyatta Memorial Library, University of Nairobi', 'as': 'AS36914 Kenya Education Network', 'query': '41.89.162.2'}
+Raw Data: 
+Username: admin
+Password: 12345
+======================================
+
+==================================================
+
+Time: Tue Jan 14 07:00:50 2025
+IP: 41.89.162.2
+Port: 2000
+Command Executed: uname
+Command Result: Linux kali 5.10.0-kali3-amd64 #1 SMP Debian 5.10.13-1kali1 (2021-02-08) x86_64 GNU/Linux
+Location Data: {'status': 'success', 'country': 'Kenya', 'countryCode': 'KE', 'region': '30', 'regionName': 'Nairobi County', 'city': 'Nairobi', 'zip': '09831', 'lat': -1.2841, 'lon': 36.8155, 'timezone': 'Africa/Nairobi', 'isp': 'KENET', 'org': 'Jomo Kenyatta Memorial Library, University of Nairobi', 'as': 'AS36914 Kenya Education Network', 'query': '41.89.162.2'}
+Raw Data: 
+Username: admin
+Password: 12345
+======================================
+
+==================================================
+
+Time: Tue Jan 14 07:03:29 2025
+IP: 41.89.162.2
+Port: 2000
+Command Executed: exit
+Command Result: Command not found
+Location Data: {'status': 'success', 'country': 'Kenya', 'countryCode': 'KE', 'region': '30', 'regionName': 'Nairobi County', 'city': 'Nairobi', 'zip': '09831', 'lat': -1.2841, 'lon': 36.8155, 'timezone': 'Africa/Nairobi', 'isp': 'KENET', 'org': 'Jomo Kenyatta Memorial Library, University of Nairobi', 'as': 'AS36914 Kenya Education Network', 'query': '41.89.162.2'}
+Raw Data: 
+Username: admin
+Password: 12345
+======================================
+
+==================================================
+
+Time: Tue Jan 14 07:03:32 2025
+IP: 41.89.162.2
+Port: 2000
+Command Executed: kill
+Command Result: Command not found
+Location Data: {'status': 'success', 'country': 'Kenya', 'countryCode': 'KE', 'region': '30', 'regionName': 'Nairobi County', 'city': 'Nairobi', 'zip': '09831', 'lat': -1.2841, 'lon': 36.8155, 'timezone': 'Africa/Nairobi', 'isp': 'KENET', 'org': 'Jomo Kenyatta Memorial Library, University of Nairobi', 'as': 'AS36914 Kenya Education Network', 'query': '41.89.162.2'}
+Raw Data: 
+Username: admin
+Password: 12345
+======================================
+
+==================================================
+
+Time: Tue Jan 14 07:50:51 2025
 IP: 41.89.162.2
 Port: 2000
 Command Executed: 
 Command Result: 
-Location Data: {'status': 'success', 'country': 'Kenya', 'countryCode': 'KE', 'region': '30', 'regionName': 'Nairobi County', 'city': 'Thika', 'zip': '', 'lat': -1.0258, 'lon': 37.0706, 'timezone': 'Africa/Nairobi', 'isp': 'KENET', 'org': 'Jomo Kenyatta Memorial Library, University of Nairobi', 'as': 'AS36914 Kenya Education Network', 'query': '41.89.162.2'}
+Location Data: {'status': 'success', 'country': 'Kenya', 'countryCode': 'KE', 'region': '30', 'regionName': 'Nairobi County', 'city': 'Nairobi', 'zip': '09831', 'lat': -1.2841, 'lon': 36.8155, 'timezone': 'Africa/Nairobi', 'isp': 'KENET', 'org': 'Jomo Kenyatta Memorial Library, University of Nairobi', 'as': 'AS36914 Kenya Education Network', 'query': '41.89.162.2'}
+Raw Data: 
+Username: admin
+Password: 12345
+======================================
+
+==================================================
+
+Time: Tue Jan 14 07:51:04 2025
+IP: 41.89.162.2
+Port: 2000
+Command Executed: ls
+Command Result: manage.py  myapp  venv  requirements.txt  README.md
+Location Data: {'status': 'success', 'country': 'Kenya', 'countryCode': 'KE', 'region': '30', 'regionName': 'Nairobi County', 'city': 'Nairobi', 'zip': '09831', 'lat': -1.2841, 'lon': 36.8155, 'timezone': 'Africa/Nairobi', 'isp': 'KENET', 'org': 'Jomo Kenyatta Memorial Library, University of Nairobi', 'as': 'AS36914 Kenya Education Network', 'query': '41.89.162.2'}
+Raw Data: 
+Username: admin
+Password: 12345
+======================================
+
+==================================================
+
+Time: Tue Jan 14 07:51:16 2025
+IP: 41.89.162.2
+Port: 2000
+Command Executed: cd myapp
+Command Result: Changed directory to /home/kali/myapp
+Location Data: {'status': 'success', 'country': 'Kenya', 'countryCode': 'KE', 'region': '30', 'regionName': 'Nairobi County', 'city': 'Nairobi', 'zip': '09831', 'lat': -1.2841, 'lon': 36.8155, 'timezone': 'Africa/Nairobi', 'isp': 'KENET', 'org': 'Jomo Kenyatta Memorial Library, University of Nairobi', 'as': 'AS36914 Kenya Education Network', 'query': '41.89.162.2'}
+Raw Data: 
+Username: admin
+Password: 12345
+======================================
+
+==================================================
+
+Time: Tue Jan 14 07:51:30 2025
+IP: 41.89.162.2
+Port: 2000
+Command Executed: touch r.txt
+Command Result: File r.txt created
+Location Data: {'status': 'success', 'country': 'Kenya', 'countryCode': 'KE', 'region': '30', 'regionName': 'Nairobi County', 'city': 'Nairobi', 'zip': '09831', 'lat': -1.2841, 'lon': 36.8155, 'timezone': 'Africa/Nairobi', 'isp': 'KENET', 'org': 'Jomo Kenyatta Memorial Library, University of Nairobi', 'as': 'AS36914 Kenya Education Network', 'query': '41.89.162.2'}
 Raw Data: 
 Username: admin
 Password: 12345
